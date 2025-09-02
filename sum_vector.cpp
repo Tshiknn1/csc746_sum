@@ -16,14 +16,6 @@ setup(int64_t N, float A[])
    // fill A with 0...N-1
    for (int64_t i = 0; i < N; i++) {
       A[i] = i;
-      
-      // at large problem sizes, we sometimes round up to N;
-      // this will be a problem for perform_sum, so let's bring it down
-      int64_t insert_val = i;
-      while ((int64_t) A[i] == N) {
-         insert_val--;
-         A[i] = insert_val;
-      }
    }
 }
 
