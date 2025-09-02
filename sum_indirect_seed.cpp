@@ -5,6 +5,7 @@
 #include <random>
 #include <vector>
 #include <string.h>
+#include <time.h>
 
 #include "sums.h"
 
@@ -25,6 +26,17 @@ setup(int64_t N, float A[])
          A[i] = insert_val;
       }
    }
+
+   // get system time and use it to override seed for RNG
+   struct timespec ts;
+   clock_gettime(CLOCK_REALTIME, &ts);
+
+   unsigned short seed[3];
+   seed[0] = ts.tv_sec & 0xffff;
+   seed[1] = (ts.tv_nsec << 16) & 0xffff;
+   seed[2] = ts.tv_nsec & 0xffff;
+   
+   seed48(seed);
 
    // swap each item with a random index
    float tmp;

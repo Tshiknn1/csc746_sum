@@ -57,4 +57,9 @@ target_link_libraries(sum_indirect PRIVATE benchmark)
 target_compile_features(sum_indirect PRIVATE cxx_std_11)
 target_compile_options(sum_indirect PRIVATE -Wall -pedantic -march=native)
 
+add_executable (sum_indirect_seed sum_indirect_seed.cpp)
+target_link_libraries(sum_indirect_seed PRIVATE benchmark)
+target_compile_features(sum_indirect_seed PRIVATE cxx_std_11)
+target_compile_options(sum_indirect_seed PRIVATE -Wall -pedantic -march=native)
+
 # EOF
