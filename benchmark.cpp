@@ -21,6 +21,10 @@ int main(int argc, char** argv)
 {
    std::cout << std::fixed << std::setprecision(2);
 
+   if (argc == 3) {
+      printf("Working on method %s, trial %s\n", argv[1], argv[2]);
+   }
+
 #define MAX_PROBLEM_SIZE 1 << 28  //  256M
    std::vector<int64_t> problem_sizes{ MAX_PROBLEM_SIZE >> 5, MAX_PROBLEM_SIZE >> 4, MAX_PROBLEM_SIZE >> 3, MAX_PROBLEM_SIZE >> 2, MAX_PROBLEM_SIZE >> 1, MAX_PROBLEM_SIZE};
    
@@ -36,7 +40,6 @@ int main(int argc, char** argv)
 
       // invoke user code to set up the problem
       setup(n, &A[0]);
-      printf("%lf, %lf,..., %lf, %lf, %lf\n", A[0], A[1], A[n-3], A[n-2], A[n-1]);
 
       // start timer
       std::chrono::time_point<std::chrono::high_resolution_clock> start_time = std::chrono::high_resolution_clock::now();
