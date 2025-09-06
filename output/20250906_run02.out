@@ -1,0 +1,128 @@
+Working on method sum_direct, trial 1
+Working on problem size N=8388608 
+ inside direct_sum problem_setup, N=8388608 
+ inside direct_sum perform_sum, N=8388608 
+Problem size N=8388608 took 0.007439 seconds Sum result = 35197542203392.000000 
+Working on problem size N=16777216 
+ inside direct_sum problem_setup, N=16777216 
+ inside direct_sum perform_sum, N=16777216 
+Problem size N=16777216 took 0.014805 seconds Sum result = 146610319261696.000000 
+Working on problem size N=33554432 
+ inside direct_sum problem_setup, N=33554432 
+ inside direct_sum perform_sum, N=33554432 
+Problem size N=33554432 took 0.028717 seconds Sum result = 562949953421312.000000 
+Working on problem size N=67108864 
+ inside direct_sum problem_setup, N=67108864 
+ inside direct_sum perform_sum, N=67108864 
+Problem size N=67108864 took 0.057391 seconds Sum result = 1125899906842624.000000 
+Working on problem size N=134217728 
+ inside direct_sum problem_setup, N=134217728 
+ inside direct_sum perform_sum, N=134217728 
+Problem size N=134217728 took 0.114710 seconds Sum result = 2251799813685248.000000 
+Working on problem size N=268435456 
+ inside direct_sum problem_setup, N=268435456 
+ inside direct_sum perform_sum, N=268435456 
+Problem size N=268435456 took 0.229346 seconds Sum result = 4503599627370496.000000 
+Working on method sum_vector, trial 1
+Working on problem size N=8388608 
+ inside sum_vector problem_setup, N=8388608 
+ inside sum_vector perform_sum, N=8388608 
+Problem size N=8388608 took 0.007176 seconds Sum result = 35197542203392.000000 
+Working on problem size N=16777216 
+ inside sum_vector problem_setup, N=16777216 
+ inside sum_vector perform_sum, N=16777216 
+Problem size N=16777216 took 0.014656 seconds Sum result = 146610319261696.000000 
+Working on problem size N=33554432 
+ inside sum_vector problem_setup, N=33554432 
+ inside sum_vector perform_sum, N=33554432 
+Problem size N=33554432 took 0.028729 seconds Sum result = 562949953421312.000000 
+Working on problem size N=67108864 
+ inside sum_vector problem_setup, N=67108864 
+ inside sum_vector perform_sum, N=67108864 
+Problem size N=67108864 took 0.057422 seconds Sum result = 1125899906842624.000000 
+Working on problem size N=134217728 
+ inside sum_vector problem_setup, N=134217728 
+ inside sum_vector perform_sum, N=134217728 
+Problem size N=134217728 took 0.114846 seconds Sum result = 2251799813685248.000000 
+Working on problem size N=268435456 
+ inside sum_vector problem_setup, N=268435456 
+ inside sum_vector perform_sum, N=268435456 
+Problem size N=268435456 took 0.229644 seconds Sum result = 4503599627370496.000000 
+Working on method sum_indirect, trial 1
+Working on problem size N=8388608 
+Problem size N=8388608 took 0.056718 seconds Sum result = 36037774540800.000000 
+Working on problem size N=16777216 
+Problem size N=16777216 took 0.230682 seconds Sum result = 140696291901440.000000 
+Working on problem size N=33554432 
+Problem size N=33554432 took 0.191461 seconds Sum result = 562949953421312.000000 
+Working on problem size N=67108864 
+Problem size N=67108864 took 0.510985 seconds Sum result = 1125899906842624.000000 
+Working on problem size N=134217728 
+Problem size N=134217728 took 1.944740 seconds Sum result = 2251799813685248.000000 
+Working on problem size N=268435456 
+Problem size N=268435456 took 2.454985 seconds Sum result = 4503599627370496.000000 
+Working on method sum_indirect, trial 2
+Working on problem size N=8388608 
+Problem size N=8388608 took 0.052932 seconds Sum result = 36037774540800.000000 
+Working on problem size N=16777216 
+Problem size N=16777216 took 0.238424 seconds Sum result = 140696291901440.000000 
+Working on problem size N=33554432 
+Problem size N=33554432 took 0.187629 seconds Sum result = 562949953421312.000000 
+Working on problem size N=67108864 
+Problem size N=67108864 took 0.500910 seconds Sum result = 1125899906842624.000000 
+Working on problem size N=134217728 
+Problem size N=134217728 took 1.790422 seconds Sum result = 2251799813685248.000000 
+Working on problem size N=268435456 
+Problem size N=268435456 took 2.474356 seconds Sum result = 4503599627370496.000000 
+Working on method sum_indirect, trial 3
+Working on problem size N=8388608 
+Problem size N=8388608 took 0.052873 seconds Sum result = 36037774540800.000000 
+Working on problem size N=16777216 
+Problem size N=16777216 took 0.247063 seconds Sum result = 140696291901440.000000 
+Working on problem size N=33554432 
+Problem size N=33554432 took 0.184772 seconds Sum result = 562949953421312.000000 
+Working on problem size N=67108864 
+Problem size N=67108864 took 0.509448 seconds Sum result = 1125899906842624.000000 
+Working on problem size N=134217728 
+Problem size N=134217728 took 1.967827 seconds Sum result = 2251799813685248.000000 
+Working on problem size N=268435456 
+Problem size N=268435456 took 2.493746 seconds Sum result = 4503599627370496.000000 
+Working on method sum_indirect_seed, trial 1
+Working on problem size N=8388608 
+seed: A789 00 652AProblem size N=8388608 took 0.053889 seconds Sum result = 35020777455616.000000 
+Working on problem size N=16777216 
+seed: A789 00 8AAAProblem size N=16777216 took 0.106740 seconds Sum result = 140022409854976.000000 
+Working on problem size N=33554432 
+seed: A78A 00 40CAProblem size N=33554432 took 0.216178 seconds Sum result = 562949953421312.000000 
+Working on problem size N=67108864 
+seed: A78A 00 6953Problem size N=67108864 took 0.531490 seconds Sum result = 1125899906842624.000000 
+Working on problem size N=134217728 
+seed: A78B 00 F8CCProblem size N=134217728 took 1.103507 seconds Sum result = 2251799813685248.000000 
+Working on problem size N=268435456 
+seed: A78D 00 C5F3Problem size N=268435456 took 4.797913 seconds Sum result = 4503599627370496.000000 
+Working on method sum_indirect_seed, trial 2
+Working on problem size N=8388608 
+seed: A794 00 33D7Problem size N=8388608 took 0.053205 seconds Sum result = 35106014101504.000000 
+Working on problem size N=16777216 
+seed: A794 00 F5A6Problem size N=16777216 took 0.105832 seconds Sum result = 139813139251200.000000 
+Working on problem size N=33554432 
+seed: A794 00 C089Problem size N=33554432 took 0.213270 seconds Sum result = 562949953421312.000000 
+Working on problem size N=67108864 
+seed: A795 00 2E97Problem size N=67108864 took 0.484836 seconds Sum result = 1125899906842624.000000 
+Working on problem size N=134217728 
+seed: A796 00 46B9Problem size N=134217728 took 1.071957 seconds Sum result = 2251799813685248.000000 
+Working on problem size N=268435456 
+seed: A798 00 93BProblem size N=268435456 took 2.223593 seconds Sum result = 4503599627370496.000000 
+Working on method sum_indirect_seed, trial 3
+Working on problem size N=8388608 
+seed: A79C 00 F95Problem size N=8388608 took 0.052610 seconds Sum result = 35063179771904.000000 
+Working on problem size N=16777216 
+seed: A79C 00 1557Problem size N=16777216 took 0.106256 seconds Sum result = 142523523661824.000000 
+Working on problem size N=33554432 
+seed: A79C 00 7F4AProblem size N=33554432 took 0.212013 seconds Sum result = 562949953421312.000000 
+Working on problem size N=67108864 
+seed: A79D 00 C66CProblem size N=67108864 took 0.501014 seconds Sum result = 1125899906842624.000000 
+Working on problem size N=134217728 
+seed: A79E 00 A956Problem size N=134217728 took 2.205121 seconds Sum result = 2251799813685248.000000 
+Working on problem size N=268435456 
+seed: A7A1 00 2EA8Problem size N=268435456 took 2.283088 seconds Sum result = 4503599627370496.000000 
