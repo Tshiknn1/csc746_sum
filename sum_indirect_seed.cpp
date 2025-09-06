@@ -20,6 +20,8 @@ setup(int64_t N, float A[])
    seed[0] = ts.tv_sec & 0xffff;
    seed[1] = (ts.tv_nsec << 16) & 0xffff;
    seed[2] = ts.tv_nsec & 0xffff;
+
+   printf("seed: %02X %02X %02X", seed[0], seed[1], seed[2]);
    
    seed48(seed);
 
