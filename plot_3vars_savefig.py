@@ -18,10 +18,17 @@ Assumptions: developed and tested using Python version 3.8.8 on macOS 11.6
 
 import pandas as pd
 import matplotlib.pyplot as plt
+import argparse
 
-plot_fname = "myplot.png"
+parser = argparse.ArgumentParser(prog='summarize.py')
+parser.add_argument('filename')
+parser.add_argument('-v', '--variable', default='Runtime')
+parser.add_argument('-o', '--suppress_col_1', action='store_true')
+args = parser.parse_args()
 
-fname = "sample_data_3vars.csv"
+fname = args.filename
+plot_fname = fname.split('.')[0] + '.png'
+
 df = pd.read_csv(fname, comment="#")
 print(df)
 
@@ -39,13 +46,17 @@ code3_time = df[var_names[3]].values.tolist()
 
 plt.figure()
 
-plt.title("Comparison of 3 Codes")
+if args.suppress_col_1:
+    plt.title("Comparison of 2 Codes")
+else:
+    plt.title("Comparison of 3 Codes")
 
 xlocs = [i for i in range(len(problem_sizes))]
 
 plt.xticks(xlocs, problem_sizes)
 
-plt.plot(code1_time, "r-o")
+if not args.suppress_col_1:
+    plt.plot(code1_time, "r-o")
 plt.plot(code2_time, "b-x")
 plt.plot(code3_time, "g-^")
 
@@ -53,9 +64,12 @@ plt.plot(code3_time, "g-^")
 #plt.yscale("log")
 
 plt.xlabel("Problem Sizes")
-plt.ylabel("runtime")
+plt.ylabel(args.variable)
 
-varNames = [var_names[1], var_names[2], var_names[3]]
+if not args.suppress_col_1:
+    varNames = [var_names[1], var_names[2], var_names[3]]
+else:
+    varNames = [var_names[2], var_names[3]]
 plt.legend(varNames, loc="best")
 
 plt.grid(axis='both')
