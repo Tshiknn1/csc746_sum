@@ -25,13 +25,13 @@ sum(int64_t N, float A[])
    // printf(" inside sum_indirect perform_sum, N=%ld \n", N);
 
    float sum = 0.f;
-   float latest = A[0];
+   float latest = 0.f;
 
    // jump to index pointed to by the most recently accessed value in A
    // do this for all values in A
    for (int i = 1; i < N; i++) {
-      sum += latest;
       latest = A[(int64_t) latest];
+      sum += latest;
    }
 
    return sum;

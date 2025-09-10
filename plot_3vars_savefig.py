@@ -1,18 +1,22 @@
 """
 
+This is a modified version of plot_3vars_savefig.py, which was originally
+written by:
+
 E. Wes Bethel, Copyright (C) 2022
 
-October 2022
+Sept. 2025
 
-Description: This code loads a .csv file and creates a 3-variable plot, and saves it to a file named "myplot.png"
+Description: This code loads a .csv file and creates a 3-variable plot, with various arguments, saving it to the same filename with .png extension.
 
-Inputs: the named file "sample_data_3vars.csv"
+Inputs:
+    filename        the name of the file we read from
+    variable        the name of the variable we are plotting, displayed on the y-axis
+    suppress_col_1  set this flag if you want to ignore data in column 1 and plot 2 variables instead of 3
 
 Outputs: displays a chart with matplotlib
 
-Dependencies: matplotlib, pandas modules
-
-Assumptions: developed and tested using Python version 3.8.8 on macOS 11.6
+Dependencies: matplotlib, pandas modules, argparse
 
 """
 

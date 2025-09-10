@@ -1,3 +1,24 @@
+"""
+
+Evan Caplinger, (c)2025
+
+Sept. 2025
+
+Description: This code looks at the output from a slurm batch job output file and generates a .csv of runtime or other metrics for the run.
+
+Inputs:
+    filename        the name of the output file we read from
+    indirect        choose the type of indirect sum we want to read. expect 'indirect_sum' or 'indirect_sum_seed'
+    trial           choose the indirect sum trial we want. must be an integer that is found in the output file
+    transformation  if you want to calculate a statistic other than runtime, state that here. accepts 'runtime', 'mflops_per_s', 'avg_latency', 'bandwidth', 'pct_bandwidth'
+    average         set this flag if you want to also calculate the average of all problem sizes
+
+Outputs: a .csv file with filename <original_filename>_<indirect>_<trial>_<transformation>.csv
+
+Dependencies: argparse
+
+"""
+
 import re
 import argparse
 import os
